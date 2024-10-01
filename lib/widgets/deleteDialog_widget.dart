@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-Future showDeleteDialog(
-  BuildContext context,
-  Function(int) deletar,
-  final Map<String, dynamic> tarefa,
-) {
+Future showDeleteDialog({
+  required BuildContext context,
+  required Function(int) deletar,
+  required final Map<String, dynamic> tarefa,
+}) {
   return showDialog(
     context: context,
     builder: (context) {

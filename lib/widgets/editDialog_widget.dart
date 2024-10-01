@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 Future showEditDialog(
-  BuildContext context,
-  TextEditingController tarefaEditController,
-  TextEditingController descricaoEditController,
-  Function(int, String, String) editar,
-  final Map<String, dynamic> tarefa,
+  {required BuildContext context,
+  required TextEditingController tarefaEditController,
+  required TextEditingController descricaoEditController,
+  required Function(int, String, String) editar,
+  required final Map<String, dynamic> tarefa}
 ) {
   final formKey = GlobalKey<FormState>();
   return showDialog(

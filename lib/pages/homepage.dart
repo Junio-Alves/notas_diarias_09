@@ -78,10 +78,10 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Colors.green,
         //Chama "showAddDialog" para adicionar nova anotação!
         onPressed: () => showAddDialog(
-          context,
-          tarefaController,
-          descricaoCOntroller,
-          salvar,
+          context:context,
+          tarefaController:tarefaController,
+          descricaoController:descricaoCOntroller,
+          salvar:salvar,
         ),
         child: const Icon(
           Icons.add,

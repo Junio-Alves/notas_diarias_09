@@ -45,11 +45,11 @@ class _ListarItensState extends State<ListarItens> {
             IconButton(
               //EDITAR
               onPressed: () => showEditDialog(
-                context,
-                tarefaEditController,
-                descricaoEditCOntroller,
-                widget.editar,
-                widget.tarefa,
+                context: context,
+                tarefaEditController: tarefaEditController,
+                descricaoEditController: descricaoEditCOntroller,
+                editar: widget.editar,
+                tarefa: widget.tarefa,
               ),
               icon: const Icon(
                 Icons.edit,
@@ -59,9 +59,9 @@ class _ListarItensState extends State<ListarItens> {
             IconButton(
               //DELETAR
               onPressed: () => showDeleteDialog(
-                context,
-                widget.deletar,
-                widget.tarefa,
+                context: context,
+                deletar: widget.deletar,
+                tarefa: widget.tarefa,
               ),
               icon: const Icon(
                 Icons.delete,
